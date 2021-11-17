@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:53:28 by hboukili          #+#    #+#             */
-/*   Updated: 2021/11/07 21:14:08 by hboukili         ###   ########.fr       */
+/*   Updated: 2021/11/16 15:42:02 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,10 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
 // int main()
 // {
-// 	int a = {1,2};
-// 	printf("%s\n",ft_memchr(a,0,8));
+// 	char a[] = "hamza boukiili";
+// 	printf("%s\n",ft_memchr(a,'i',15));
 // 	// printf("%d",memchr("1",0,2));
 //  }

@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:21:40 by hboukili          #+#    #+#             */
-/*   Updated: 2021/11/07 21:19:38 by hboukili         ###   ########.fr       */
+/*   Updated: 2021/11/16 16:12:08 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char	*p;
-	size_t	i;
-	char	*x;
+	unsigned char	*p;
+	size_t			i;
+	unsigned char	*x;
 
-	x = (char *)src;
-	p = (char *)dst;
+	x = (unsigned char *)src;
+	p = (unsigned char *)dst;
 	i = 0;
 	if (x == NULL && p == NULL)
 		return (NULL);

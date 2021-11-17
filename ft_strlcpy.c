@@ -6,32 +6,30 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:51:52 by hboukili          #+#    #+#             */
-/*   Updated: 2021/11/07 21:30:24 by hboukili         ###   ########.fr       */
+/*   Updated: 2021/11/16 23:44:48 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t l)
+size_t	ft_strlcpy(char *dst, const char *src1, size_t size)
 {
-	char	*s;
-	char	*d;
 	size_t	len;
+	size_t	i;
 
-	s = (char *)src;
-	d = (char *)dst;
-	len = ft_strlen(s);
-	if (len + 1 < l)
+	i = 0;
+	len = ft_strlen(src1);
+	if (size == 0)
+		return (len);
+	while (src1[i] && (i < size - 1))
 	{
-		ft_memcpy (d, s, len + 1);
+		dst[i] = src1[i];
+		i++;
 	}
-	else if (l != '\0')
-	{
-		ft_memcpy (d, s, l - 1);
-		dst[l - 1] = '\0';
-	}
+	dst[i] = ('\0');
 	return (len);
 }
+
 //  int main()
 // // {
 // //      char s[20] = "Hamza";

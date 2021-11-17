@@ -6,22 +6,22 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 15:04:14 by hboukili          #+#    #+#             */
-/*   Updated: 2021/11/09 15:50:23 by hboukili         ###   ########.fr       */
+/*   Updated: 2021/11/16 00:14:36 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str1, const char *str2, size_t len)
+char	*ft_strnstr(const char *str1, const char *s2, size_t len)
 {
 	size_t	i;
 	size_t	j;
 	char	*s1;
-	char	*s2;
 
 	s1 = (char *) str1;
-	s2 = (char *) str2;
 	i = 0;
+	if (!s1 && len == 0 && s2)
+		return (NULL);
 	if (s2[0] == '\0')
 		return (s1);
 	while (s1[i] != '\0' && i < len)
@@ -40,9 +40,9 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 
 // int main()
 // {
-// 	char a[] = "hamza boukili aime mange le couscous du maroc";
-// 	char b[] = "mange";
+// 	char *a;
+// 	char b[] = "abc";
 // 	size_t n = 20;
-// 	printf("%s\n",ft_strnstr(a,b,n));
+// 	 printf("%s\n",ft_strnstr(a,b,n));
 // 	printf("%s",strnstr(a,b,n));
 // }

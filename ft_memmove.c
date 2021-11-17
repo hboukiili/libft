@@ -6,7 +6,7 @@
 /*   By: hboukili <hboukili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 15:11:28 by hboukili          #+#    #+#             */
-/*   Updated: 2021/11/15 04:39:41 by hboukili         ###   ########.fr       */
+/*   Updated: 2021/11/16 16:10:18 by hboukili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	char	*d;
-	char	*s;
-	size_t	i;
+	unsigned char	*d;
+	unsigned char	*s;
+	size_t			i;
 
-	d = (char *) dest;
-	s = (char *) src;
+	d = (unsigned char *) dest;
+	s = (unsigned char *) src;
 	i = 0;
 	if (d > s)
 	{
